@@ -23,3 +23,7 @@ export const yourInfoPage = {
 export const overviewPage = {
     finishBtn: '[data-test="finish"]'
 }
+
+export const checkoutEndPage = {
+    checkoutComplete: '#checkout_complete_container'
+}
