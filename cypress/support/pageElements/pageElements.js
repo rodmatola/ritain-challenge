@@ -5,7 +5,8 @@ export const loginPage = {
 }
 
 export const inventoryPage = {
-    addBackpackToCart: '[data-test="add-to-cart-sauce-labs-backpack"]',
+    addBackpackToCartBtn: '[data-test="add-to-cart-sauce-labs-backpack"]',
+    removeBackpackFromCartBtn: '[data-test="remove-sauce-labs-backpack"]',
     shoppingCartBtn: '#shopping_cart_container'
 }
 
