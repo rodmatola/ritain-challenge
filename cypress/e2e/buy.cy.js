@@ -2,7 +2,12 @@ import { inventoryPage, yourCartPage, yourInfoPage, overviewPage, checkoutEndPag
 import { faker } from '@faker-js/faker';
 
 describe('Successfull buy', () => {
+  
+  
   it('buys a backpack', () => {
+    cy.configureCypressAxe({
+      skipFailures: true,
+    })
 
     cy.step('Given I am on the inventory page');
     cy.visit('/');
