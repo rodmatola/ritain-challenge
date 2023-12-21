@@ -8,6 +8,8 @@ describe('Successfull buy', () => {
     cy.visit('/');
     cy.login('standard_user', 'secret_sauce');
     cy.percySnapshot('inventoryPage');
+    cy.injectAxe()
+    cy.checkA11y()
 
     cy.step('When I add a backpack to the cart');
     cy.get(inventoryPage.addBackpackToCartBtn).click();
@@ -17,19 +19,27 @@ describe('Successfull buy', () => {
     cy.step('And do the checkout process');
     cy.get(inventoryPage.shoppingCartBtn).click();
     cy.percySnapshot('yourCartPage');
+    cy.injectAxe()
+    cy.checkA11y()
     
     cy.get(yourCartPage.checkoutBtn).click();
     cy.percySnapshot('yourInfoPage');
+    cy.injectAxe()
+    cy.checkA11y()
     
     cy.fillUserInfo(faker.person.firstName(), faker.person.lastName(), faker.location.zipCode());
     cy.get(yourInfoPage.continueBtn).click();
     cy.percySnapshot('overviewPage');
+    cy.injectAxe()
+    cy.checkA11y()
 
     cy.get(overviewPage.finishBtn).click()
 
     cy.step('Then I should see a succesfull message');
     cy.get(checkoutEndPage.checkoutComplete).should('exist')
     cy.percySnapshot('checkoutEndPage');
+    cy.injectAxe()
+    cy.checkA11y()
     
   });
 });
