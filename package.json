@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "percy exec -- cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^8.3.1",
+    "@percy/cli": "^1.27.4",
+    "@percy/cypress": "^3.1.2",
+    "axe-core": "^4.8.3",
     "cypress": "^13.6.1",
+    "cypress-axe-core": "^2.0.0",
     "cypress-plugin-steps": "^1.1.1",
     "eslint-plugin-cypress": "^2.15.1"
   }
