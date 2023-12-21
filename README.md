@@ -22,7 +22,7 @@ I believe it means use Gherkin. I chose not to use Cucumber, but [Cypress Steps 
 
 I chose to write just one scenario, but doing more verifications than usual.
 
-The chosen scenario was to buy the backpack and, on each screen, verify together the accessibility with [Cypress Axe](https://www.npmjs.com/package/cypress-axe) and do visual tests using [Percy for Cypress](https://github.com/percy/percy-cypress).
+The chosen scenario was to buy the backpack and, on each screen, verify together the accessibility with [Cypress Axe](https://github.com/mwmcode/cypress-axe-core) and do visual tests using [Percy for Cypress](https://github.com/percy/percy-cypress).
 
 ### Observations
 
