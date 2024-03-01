@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^8.3.1",
+    "@faker-js/faker": "^8.4.1",
     "@percy/cli": "^1.27.4",
     "@percy/cypress": "^3.1.2",
     "axe-core": "^4.8.3",
